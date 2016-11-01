@@ -1,6 +1,7 @@
 function Carousel(options) {
     this.set = options
     this.car = document.getElementById(this.set.id)
+    this.bg=this.getByClass(document.body,'main-nav')[0]
     this.inner = this.getByClass(this.car, this.set.className)[0]
     this.wid = this.getStyle(this.car, 'width')
     this.num = this.car.getElementsByTagName('img').length
@@ -112,6 +113,7 @@ Carousel.prototype = {
     },
 
     showBtn: function() {
+      var color=['#fea000','#ff9630','#7e01ef']
         for (var i = 0; i < this.btns.length; i++) {
             if (this.btns[i].className == 'on') {
                 this.btns[i].className = ''
@@ -119,6 +121,7 @@ Carousel.prototype = {
             }
         }
         this.btns[this.ind - 1].className = 'on'
+        this.bg.style.background=color[this.ind-1]
     },
 
     getStyle: function(ele, attr) {
