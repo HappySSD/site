@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="with=device-width initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>fundation</title>
+    <!--[if IE]>
+    <script src='/html5shiv-master/dist/html5shiv.min.js'></script>
+    <![endif]-->
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-size: 16px;
+     }
+    body{
+    	height: 100%;
+    	min-width: 1360px;
+    }
+   /*  @media (max-width:963px){
+    	body{
+    		font-size: 11px;
+    	}
+    }
+    @media (max-width:663px){
+    	body{
+    		font-size: 6px;
+    	}
+    } */
+    ul {
+        list-style-type: none;
+    }
+
+    nav {
+        height: 85px;
+        width: 100%;
+        background: white url('images/psd20434_03.png') no-repeat 13% 50% / 14% 70%;
+        *background: white url('images/psd20434_03.png') no-repeat 13% 50%;
+        text-align: center;
+        padding-left: 43%;
+    }
+
+    nav li {
+        width: 13%;
+        *width: 7.28%;
+        height: 85px;
+        line-height: 85px;
+        float: left;
+    }
+
+    nav li:first-child {
+        background-color: red;
+    }
+    .photo{
+    	width: 100%;overflow: hidden;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        height: 26em;
+        padding: 2em 0;
+        overflow: hidden;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    .content-sumary {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .content-sumary div {
+        width: 50%;
+        *width: 33%;
+        float: left;
+        background: url('images/psd20434_111.png') no-repeat 0 60% / 17% 100%;
+        *background: url('images/psd20434_111.png') no-repeat 0 60%;
+        padding-left: 100px;
+        *padding-left: 130px;
+        *padding-top: 79px;
+        margin: 32px 0;
+        margin-top: 32px;
+    }
+
+    .content-sumary h3 {
+        margin: 10px 0 7px 0;
+    }
+
+    .wrap {
+        background-color: #f5f5f5;
+        width: 100%;
+        padding-bottom: 31px;
+    }
+
+    .example {
+        padding-top: 23px;
+        text-align: center;
+    }
+
+    .example>h1 {
+        margin-bottom: 30px;
+    }
+
+    .example>p {
+        margin-bottom: 39px;
+    }
+
+    .photo-list {
+        margin: 0 auto;
+        display: inline-block;
+        padding-bottom: 3.3em;
+    }
+
+    .photo-list ul {
+        display: flex;
+    }
+
+    .photo-list li {
+        margin: 10px;
+        display: inline-block;
+         *zoom:1;
+         *display:inline;
+    }
+
+    .photo-list>p {
+        width: 4.3em;
+        height: 1.6em;
+        margin: 0 auto;
+    }
+
+    .photo-list>p .a1 {
+        width: 1.4em;
+        height: 1.3em;
+        line-height: 1.3em;
+        float: left;
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .photo-list>p .a2 {
+        width: 22px;
+        height: 21px;
+        line-height: 21px;
+        float: right;
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .new {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .new h2 a {
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 1em;
+    }
+
+    .new-body {
+        width: 100%;
+        display: flex;
+    }
+
+    .new-bl {
+       *float: left;
+        width: 53%;
+        border-right: 1px solid gray;
+    }
+
+    .new-bl section {
+        margin: 1.5em 0;
+    }
+
+    .new-br {
+       *float: left;
+    	width: 43%;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 17px;
+        font-weight: bold;
+        line-height: 29px;
+    }
+
+    .new-br a {
+        text-decoration: none;
+        margin-top: 0.8em;
+        width: 7em;
+        height: 2.3em;
+        background-color: lightblue;
+        display: block;
+        border-radius: 7px;
+        line-height: 2.3em;
+        text-align: center;
+    }
+    .new-br h2{margin: 19px 0;}
+    .new-br h2 span:last-child{color: red;}
+    footer{width: 100%;background-color: rgb(34, 34, 34);color: rgb(143, 143, 143);}
+    footer .la{width: 70%;margin: 0 auto;}
+	.foot-h {display: flex;padding: 23px 0;background: url('images/psd20434_257.png') no-repeat 47% 50%/11% 31%;
+         *background: url('images/psd20434_257.png') no-repeat 47% 50%}
+	.foot-h dl{margin: 0 30px;*float: left;}
+	.foot-h dd{height: 27px;line-height: 27px;overflow: hidden;}
+	.foot-h dl dt{margin: 13px 0;font-size: 1.2em;}
+	.foot-h .d2{margin-right: 43%;}
+	.foot-b{font-size: 13px;background-color: black;line-height: 49px;text-align: center;color:rgb(143, 143, 143);}
+	.foot-h .d4 dt{color: red;}
+	.foot-h .d4 dd:nth-of-type(1){padding-left: 23px;background:url('images/psd20434_244.png') 0 -44px no-repeat;}
+	.foot-h .d4 dd:nth-of-type(2){padding-left: 23px;background:url('images/psd20434_244.png') 0 5px no-repeat;}
+	.foot-h .d4 dd:nth-of-type(3){padding-left: 23px;background:url('images/psd20434_244.png') 0 -20px no-repeat;}
+	.foot-h .d4 dd:nth-of-type(4){padding-left: 23px;background:url('images/psd20434_244.png') 0 -65px no-repeat;}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>首页</li>
+            <li>服务我们</li>
+            <li>服务我们</li>
+            <li>服务我们</li>
+            <li>服务我们</li>
+            <li>服务我们</li>
+            <li>服务我们</li>
+        </ul>
+    </nav>
+    <section class="photo">
+        <img src="images/bg.png" alt="photo">
+    </section>
+    <div class="content">
+        <h1>中国商业物业专业服务商</h1>
+        <div class="content-sumary">
+            <div>
+                <h3>商业物业</h3>
+                <p>babababababbaaaaaaaa
+                    <br>aaaaaaaaaaaaaaabbbbbbbbb</p>
+            </div>
+            <div>
+                <h3>商业物业</h3>
+                <p>babababababbaaaaaaaa
+                    <br>aaaaaaaaaaaaaaabbbbbbbbb</p>
+            </div>
+            <div>
+                <h3>商业物业</h3>
+                <p>babababababbaaaaaaaa
+                    <br>aaaaaaaaaaaaaaabbbbbbbbb</p>
+            </div>
+            <div>
+                <h3>商业物业</h3>
+                <p>babababababbaaaaaaaa
+                    <br>aaaaaaaaaaaaaaabbbbbbbbb</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="example">
+            <h1>项目案例</h1>
+            <p>商业/办公/公共/住宅</p>
+            <div class="photo-list">
+                <ul>
+                    <li><img src="images/psd20434_199.png" alt="photo">
+                        <p>国家开发银行</p>
+                    </li>
+                    <li><img src="images/psd20434_194.png" alt="photo">
+                        <p>国家开发银行</p>
+                    </li>
+                    <li><img src="images/psd20434_194.png" alt="photo">
+                        <p>国家开发银行</p>
+                    </li>
+                    <li><img src="images/psd20434_194.png" alt="photo">
+                        <p>国家开发银行</p>
+                    </li>
+                </ul>
+                <p>
+                    <a href="#" class="a1">&lt;</a>
+                    <a href="#" class="a2">&gt;</a>
+                </p>
+            </div>
+        </div>
+        <div class="new">
+            <h2>新闻动态<a href="#">全部&gt;&gt;</a></h2>
+            <div class="new-body">
+                <div class="new-bl">
+                    <section>
+                        <h3>[2014-10-16]guanyukauzai得到的顶顶顶顶顶大大大</h3>
+                        <p>bababababbabababbabbbabbabbaba</p>
+                    </section>
+                    <section>
+                        <h3>[2014-10-16]guanyukauzai得到的顶顶顶顶顶大大大</h3>
+                        <p>bababababbabababbabbbabbabbaba</p>
+                    </section>
+                    <section>
+                        <h3>[2014-10-16]guanyukauzai得到的顶顶顶顶顶大大大</h3>
+                        <p>bababababbabababbabbbabbabbaba</p>
+                    </section>
+                </div>
+                <div class="new-br">
+                    <p>babakkdljjjjjjjjjjjjjkkkkkkkkkkk
+                        <br>kkkkkkkkkklllllllllll
+                        <br>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+                    </p>
+         			<h2>
+         				<span>我们是</span>
+                        <span>中国物业服务商</span>
+         			</h2>
+                    <a href="#">在线咨询</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="la">
+    	<div class="foot-h">
+    		<dl class="d1">
+    			<dt>项目</dt>
+    			<dd>项目1</dd>
+    			<dd>项目2</dd>
+    			<dd>项目3</dd>
+    			<dd>项目4</dd>
+    			<dd>项目5</dd>
+    		</dl>
+    		<dl class="d2">
+    			<dt>服务</dt>
+    			<dd>叫地主</dd>
+    			<dd>抢地主</dd>
+    			<dd>送外卖</dd>
+    			<dd>打人</dd>
+    			<dd>上课</dd>
+    		</dl>
+    		<dl class="d3">
+    			<dt>友情链接</dt>
+    			<dd>苹果公司</dd>
+    			<dd>百度</dd>
+    			<dd>谷歌</dd>
+    		</dl>
+    		<dl class="d4">
+    			<dt>联系我们</dt>
+    			<dd>地址:xx路2楼3号</dd>
+    			<dd>电话:021-06333398</dd>
+    			<dd>传真:021-06333398</dd>
+    			<dd>留言:咨询建议</dd>
+    		</dl>
+    	</div>
+    </div>
+    </footer>
+    <div class="foot-b">
+    		Coprright@2004-2014&nbsp;xxxxx公司&nbsp;ALL&nbsp;RIGHT&nbsp;RESERVE.&nbsp;沪ICP备12345号
+    </div>
+</body>
+
+</html>
